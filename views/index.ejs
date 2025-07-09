@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Instagram</h1>
+    <div class="profile">
+        <%for(post of posts) {%>
+        <div class="border">
+            <h3> ID : <%=post.id%></h3>
+            <h3> username : <%=post.username%></h3>
+            <h3> Followers : <%=post.followers%></h3>
+            <h3><%=post.content%></h3>
+            
+        <a href="http://localhost:3030/posts/<%=post.id%>/editpost" >Edit Post</a>
+         <form action="/posts/<%= post.id %>?_method=DELETE" method="POST" style="margin-top: 10px;">
+    <button type="submit" style="color: red;">Delete Post</button>
+</form>
+
+        </div>
+       
+     <%}%>
+
+    <a href="http://localhost:3030/posts/newpost">Create a new post</a>
+    </div>
+    
+</body>
+</html>

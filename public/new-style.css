@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.new-post-form {
+  background: white;
+  border: 1px solid #dbdbdb;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.new-post-form h2 {
+  text-align: center;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
+.new-post-form input[type="text"],
+.new-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+}
+
+.new-post-form input[type="file"] {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.new-post-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-post-form button:hover {
+  background-color: #007cd1;
+}

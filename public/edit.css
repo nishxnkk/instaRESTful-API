@@ -1,0 +1,56 @@
+.edit-post-form {
+  background: white;
+  border: 1px solid #dbdbdb;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: Arial, sans-serif;
+}
+
+.edit-post-form h2 {
+  text-align: center;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
+.edit-post-form h3 {
+  font-size: 14px;
+  color: #8e8e8e;
+  margin: 5px 0;
+}
+
+.edit-post-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.edit-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+  background-color: #fafafa;
+}
+
+.edit-post-form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-post-form button:hover {
+  background-color: #007cd1;
+}
